@@ -1,0 +1,40 @@
+// ************************ Slick-slider ************************ //
+// sfs
+.slider__fullscreen {
+    position: relative;
+    .slick__fullscreen {
+        height: 500px;
+        &-item {
+            height: 400px;
+            width: 100%;
+            &.fullscreen-item-one {
+                background: red;
+            }
+            &.fullscreen-item-two {
+                background: blue;
+            }
+            &.fullscreen-item-three {
+                background: green;
+            }
+        }
+    }
+    
+}
+
+// ************************ Slick-arrows ************************ //
+.slick-arrow {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    cursor: pointer;
+    &.slick__prev {
+        left: 50px;
+        top: 42%;
+        z-index: 1;
+    }
+    &.slick__next{
+        right: 50px;
+        top: 42%;
+        z-index: 1;
+    }
+}
