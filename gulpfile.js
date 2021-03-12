@@ -5,7 +5,8 @@ let gulp = require('gulp'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
     del = require('del'),
-    autoprefixer = require('gulp-autoprefixer');
+    autoprefixer = require('gulp-autoprefixer'),
+    babel = require("gulp-babel");
 
 
 gulp.task('clean', async function(){
@@ -46,16 +47,12 @@ gulp.task('script', function(){
 
 gulp.task('js', function(){
   return gulp.src([
-   './app/js/jquery-3.5.0.min.js',
-   './app/js/jquery.inputmask.bundle.min.js',
-   './app/js/burger.js',
-   './app/js/modals.js',
-   './app/js/slick.js',
+   './app/js/navbar.js',
    './app/js/main.js',
-
-
-   
   ])
+    .pipe(babel({
+      presets: ["@babel/preset-env"]
+    }))
     .pipe(concat('scripts.js'))
     .pipe(uglify())
     .pipe(rename({suffix: '.min'}))

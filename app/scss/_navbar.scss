@@ -27,7 +27,13 @@ nav {
     }
   }
 }
-
+.fixed__nav {
+  background: #fefefe;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 111;
+}
 // ************************ Burger menu ************************ //
 .burger {
   display: none;
@@ -48,6 +54,8 @@ nav {
   justify-content: center;
   align-items: center;
 }
+
+// Так не не забыть поменять в navbar.js
 @media screen and (max-width:768px) {
     .burger {
       display: block;
