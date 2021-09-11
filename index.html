@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ремонт стиральных машин на дому  в Москве</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 </head>
 
 <body class="main__body">
@@ -18,13 +19,13 @@
           <div class="logo"> <a href="#"> <img width="123" height="26" src="img/logo.png" alt=""> </a> </div>
           <div class="menu">
             <ul class="menu__list header-address-wrapper">
-              <img width="24" height="26" src="img/address-icon.png" alt="">
+              <img width="24" height="26" src="img/address-icon.svg" alt="">
               <li class="menu__list-item header-address"><p>Москва и МО <span class="other-inf">(до 30 км от МКАД)</span></p></li>
             </ul>
             
           </div>
           <ul class="menu__list header-phone-wrapper">
-            <img width="24" height="26" src="img/phone-icon.png" alt="">
+            <img width="24" height="26" src="img/phone-icon.svg" alt="">
             <li class="menu__list-item header-phone"><a href="tel:+79994442211">+7 999 444-22 11</a></li>
           </ul>
           <div class="mobile-menu ">
@@ -98,17 +99,459 @@
       </div>
     </div>
   </div>
+
+  <section class="services">
+    <div class="container">
+      <div class="services-inner">
+        <div class="services-timer-wrapper">
+          <div class="services-timer-title">
+            <img src="img/star.png" alt="">
+            <h4>Скидка 25% на <span class="border">любые услуги</span></h4>
+          </div>
+          <div class="services-timer-text"><p>Акция закончится через:</p></div>
+          <div id="countdown" class="countdown">
+            <div class="countdown-number">
+              <span class="days countdown-time"></span>
+              <span class="countdown-text">Дней</span>
+            </div>
+            <div class="countdown-number">
+              <span class="hours countdown-time"></span>
+              <span class="countdown-text">Часов</span>
+            </div>
+            <div class="countdown-number">
+              <span class="minutes countdown-time"></span>
+              <span class="countdown-text">Минут</span>
+            </div>
+            <div class="countdown-number">
+              <span class="seconds countdown-time"></span>
+              <span class="countdown-text">Секунд</span>
+            </div>
+          </div>
+        </div>
+        <div class="services-item-wrapper">
+          <!-- Item -->
+          <div class="services-item">
+            <div class="services-item-title">
+              <p class="services-item-circle">1</p>
+              <img src="img/services-item-1.png" class="services-item-img" alt="">
+            </div>
+            <div class="services-item-descr">
+              <p>Бесплатная диагностика</p>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="services-item">
+            <div class="services-item-title">
+              <p class="services-item-circle">2</p>
+              <img src="img/services-item-2.png" class="services-item-img" alt="">
+            </div>
+            <div class="services-item-descr">
+              <p>Работаем без выходных с 7:00 до 24:00</p>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="services-item">
+            <div class="services-item-title">
+              <p class="services-item-circle">3</p>
+              <img src="img/services-item-3.png" class="services-item-img" alt="">
+            </div>
+            <div class="services-item-descr">
+              <p>Ремонт в день обращения</p>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="services-item">
+            <div class="services-item-title">
+              <p class="services-item-circle">4</p>
+              <img src="img/services-item-4.png" class="services-item-img" alt="">
+            </div>
+            <div class="services-item-descr">
+              <p>Бесплатный выезд мастера</p>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="services-item">
+            <div class="services-item-title">
+              <p class="services-item-circle">5</p>
+              <img src="img/services-item-5.png" class="services-item-img" alt="">
+            </div>
+            <div class="services-item-descr">
+              <p>Гарантия от 1 года</p>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="services-item">
+            <div class="services-item-title">
+              <p class="services-item-circle">6</p>
+              <img src="img/services-item-6.png" class="services-item-img" alt="">
+            </div>
+            <div class="services-item-descr">
+              <p>Приедем за 30 мин.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="problem">
+    <div class="container">
+      <div class="problem-inner">
+        <div class="problem-title"><h4>Что <span class="bg-red">
+          <img src="img/red-circle.svg" alt="">
+          случилось</span> со стиралкой?</h4></div>
+        <div class="problem-steps">
+          <p class="problem-steps-num">1</p>
+          <p class="problem-steps-descr">Выберите вашу проблему</p>
+        </div>
+        <div class="problem-items-wrapper">
+          <div class="problem-items">
+            <!-- item -->
+            <div class="problem-item active">
+              <div class="problem-item-img">
+                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9641 2.16938V5.32865C17.1241 6.52161 18.504 8.85778 18.504 11.4858C18.504 15.3243 15.3434 18.4378 11.4457 18.4378C7.55076 18.4378 4.39015 15.3256 4.39015 11.4858C4.39015 8.77305 5.75123 6.4436 8.01611 5.29771V2.16669C4.06602 3.47801 1.43262 7.13356 1.43262 11.4858C1.43262 16.9355 5.91666 21.351 11.4444 21.351C16.9734 21.351 21.4588 16.9355 21.4588 11.4858C21.4602 7.21291 18.8052 3.54794 14.9641 2.16938Z" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.381 10.5888C12.4274 10.5888 13.2801 9.9432 13.2801 9.14296V1.49965C13.2801 0.700751 12.4274 0.053833 11.381 0.053833C10.3333 0.053833 9.48193 0.700751 9.48193 1.49965V9.14296C9.48193 9.9432 10.3333 10.5888 11.381 10.5888Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0">
+                <rect width="22.87" height="21.5191" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+              </div>
+              <div class="problem-item-title"><p>Не включается</p></div>
+              <div class="problem-item-price"><p>От <span class="price-big">650</span> руб.</p></div>
+            </div>
+
+            <!-- item -->
+            <div class="problem-item">
+              <div class="problem-item-img"><svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.5247 3.34548C15.2596 3.34548 18.4155 5.86276 19.3909 9.28897L17.4076 7.74843L15.3556 10.3903L21.3768 15.0673L27.398 10.3903L25.3457 7.74843L22.8964 9.65105C21.9987 4.18439 17.2416 0 11.5247 0C5.17004 0 0 5.16993 0 11.5247H3.34537C3.34548 7.01468 7.01468 3.34548 11.5247 3.34548V3.34548Z" fill="#4425FF"/>
+                </svg>
+                </div>
+              <div class="problem-item-title"><p>Не открывается люк</p></div>
+              <div class="problem-item-price"><p>От <span class="price-big">2500</span> руб.</p></div>
+            </div>
+
+            <!-- item -->
+            <div class="problem-item">
+              <div class="problem-item-img"><svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.5247 20.7218C15.2596 20.7218 18.4155 18.2045 19.3909 14.7783L17.4076 16.3188L15.3556 13.677L21.3768 8.99994L27.398 13.677L25.3457 16.3188L22.8964 14.4162C21.9987 19.8829 17.2416 24.0673 11.5247 24.0673C5.17004 24.0673 0 18.8973 0 12.5426H3.34537C3.34548 17.0526 7.01468 20.7218 11.5247 20.7218Z" fill="#4425FF"/>
+                <path d="M23.6925 0.25L21 2.9425L18.3075 0.25L17.25 1.3075L19.9425 4L17.25 6.6925L18.3075 7.75L21 5.0575L23.6925 7.75L24.75 6.6925L22.0575 4L24.75 1.3075L23.6925 0.25Z" fill="#4425FF"/>
+                </svg>
+                </div>
+              <div class="problem-item-title"><p>Не вращает барабан</p></div>
+              <div class="problem-item-price"><p>От <span class="price-big">1150</span> руб.</p></div>
+            </div>
+
+            <!-- item -->
+            <div class="problem-item">
+              <div class="problem-item-img"><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.6414 16.1553L12.6508 14.5896L13.9751 10.3526L18.2118 9.0286L19.5356 4.792L23.0001 3.70958L22.0786 0.760742L17.0696 2.32594L15.7457 6.56254L11.5092 7.88655L10.1847 12.1237L6.71973 13.2067L7.6414 16.1553Z" fill="#4425FF"/>
+                <path d="M17.5475 15.0929L16.7723 18.7806L14.0713 19.3482L14.7067 22.3716L19.3809 21.3893L20.156 17.7017L22.8566 17.1343L22.2214 14.1108L17.5475 15.0929Z" fill="#4425FF"/>
+                <path d="M5.99373 8.00182L6.76876 4.3142L9.46942 3.74688L8.83424 0.723389L4.16028 1.70541L3.38504 5.39312L0.684082 5.96075L1.31947 8.98414L5.99373 8.00182Z" fill="#4425FF"/>
+                </svg>
+                </div>
+              <div class="problem-item-title"><p>Шумит</p></div>
+              <div class="problem-item-price"><p>От <span class="price-big">540</span> руб.</p></div>
+            </div>
+            <!-- item -->
+            <div class="problem-item">
+              <div class="problem-item-img"><svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.6667 17.7574C15.0952 16.3844 16 14.4622 16 12.3112C16 11.5332 15.7619 10.6636 15.381 9.74828C14.9524 8.78719 14.381 7.82609 13.7143 6.81922C13.7143 6.77346 13.6667 6.77346 13.6667 6.72769C12.2857 4.71396 10.4762 2.746 8.95238 1.05263L8 0L7.04762 1.05263C4.09524 4.34783 0 8.87872 0 12.3112C0 14.4165 0.904762 16.3387 2.33333 17.7574C3.7619 19.1304 5.76191 20 8 20C10.1905 20 12.1905 19.1304 13.6667 17.7574Z" fill="#4425FF"/>
+                </svg>
+                </div>
+              <div class="problem-item-title"><p>Течёт</p></div>
+              <div class="problem-item-price"><p>От <span class="price-big">5520</span> руб.</p></div>
+            </div>
+            <!-- item -->
+            <div class="problem-item">
+              <div class="problem-item-img"><?xml-stylesheet type="text/css" href="../css/style.min.css" ?>
+                <svg width="28" height="28" viewBox="0 0 28 28"  xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                <path d="M18.6666 15.7824V4.66665C18.6666 2.08934 16.5773 0 14 0C11.4227 0 9.33335 2.08934 9.33335 4.66665V15.7824C7.90125 17.0641 7 18.9269 7 21C7 24.866 10.134 28 14 28C17.866 28 21 24.866 21 21C21 18.9269 20.0988 17.0641 18.6666 15.7824ZM14 25.6666C11.4227 25.6666 9.33335 23.5773 9.33335 21C9.33335 19.6527 9.90434 18.4028 10.8895 17.5211L11.6667 16.8254V4.66665C11.6667 3.37799 12.7114 2.3333 14.0001 2.3333C15.2887 2.3333 16.3334 3.37794 16.3334 4.66665V16.8254L17.1106 17.5211C18.0958 18.4028 18.6668 19.6526 18.6668 21C18.6666 23.5773 16.5773 25.6666 14 25.6666Z" fill="#4425FF"/>
+                <path d="M15.273 16.5454H12.7275V22.909H15.273V16.5454Z" />
+                <path d="M14 24.5C15.933 24.5 17.5 22.933 17.5 21C17.5 19.067 15.933 17.5 14 17.5C12.067 17.5 10.5 19.067 10.5 21C10.5 22.933 12.067 24.5 14 24.5Z" fill="#4425FF"/>
+                </g>
+                <defs>
+                <clipPath id="clip0">
+                <rect width="28" height="28" />
+                </clipPath>
+                </defs>
+                </svg>
+                </div>
+              <div class="problem-item-title"><p>Не греет воду</p></div>
+              <div class="problem-item-price"><p>От <span class="price-big">650</span> руб.</p></div>
+            </div>
+            <!-- item -->
+            <div class="problem-item">
+              <div class="problem-item-img"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.462 0L9 6.462L2.538 0L0 2.538L6.462 9L0 15.462L2.538 18L9 11.538L15.462 18L18 15.462L11.538 9L18 2.538L15.462 0Z" fill="#4425FF"/>
+                </svg>
+                </div>
+              <div class="problem-item-title"><p>Сразу выключается</p></div>
+              <div class="problem-item-price"><p>От <span class="price-big">250</span> руб.</p></div>
+            </div>
+            <!-- item -->
+            <div class="problem-item">
+              <div class="problem-item-img"><svg width="21" height="5" viewBox="0 0 21 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="2.5" cy="2.5" r="2.5" fill="#4425FF"/>
+                <circle cx="10.5" cy="2.5" r="2.5" fill="#4425FF"/>
+                <circle cx="18.5" cy="2.5" r="2.5" fill="#4425FF"/>
+                </svg>
+                </div>
+              <div class="problem-item-title"><p>Что-то другое</p></div>
+              <div class="problem-item-price"><p>по договоренности</p></div>
+            </div>
+
+          </div>
+          <div style="background-image: url(img/problem-img.jpg);" class="problem-img">
+          </div>
+        </div>
+
+        <div class="problem-steps step-2">
+          <p class="problem-steps-num">2</p>
+          <p class="problem-steps-descr">Отправьте нам ваше имя и телефон и мы свяжемся с вами в ближайшее время</p>
+        </div>
+        <div class="problem-form-wrapper">
+          <form class="problem-form" action="" method="post">
+            <input class="form-name" type="text" placeholder="Имя">
+            <input class="form-phone" type="phone" placeholder="Телефон">
+            <div class="form-btn-wrapper">
+              <img width="48" height="20" src="img/arrow-right.png" alt="">
+              <button type="submit" class="form-btn">Оставить заявку</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="container">
+      <div class="reviews-inner">
+        <div class="reviews-title">
+          <h4><span class="marks">“</span> Они  просто взяли и <span class="reviews-title-icon">
+            <img src="img/instagramm-icon.svg" alt="">
+            сделали</span> <span class="marks marks-2">”</span></h4>
+        </div>
+        <div class="reviews-subtitle">
+          <p>Вот почему нас уже выбрало 3412 клиента</p>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper reviews-slider-wrapper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper reviews-items-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide reviews-item">
+              <div class="reviews-item-avatar">
+                <div class="reviews-item-avatar-img reviews-item-1-img-bg" style="background-image: url('img/reviews-item-1.png');"></div>
+              </div>
+              <div class="reviews-item-content">
+                <div class="reviews-item-title"><h4>Arlene McCoy</h4></div>
+                <div class="reviews-item-date"><p>24.09.2021</p></div>
+                <div class="reviews-item-descr">
+                  <p>Мне понравился сервис. У меня сломалась крышка у стиральной машинки, быстро нашли проблему и предложили как можно ее исправить. Ремонтировали долго конечно, но она снова в строю, я счастлива! Спасибо!</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slides -->
+            <div class="swiper-slide reviews-item">
+              <div class="reviews-item-avatar">
+                <div class="reviews-item-avatar-img reviews-item-2-img-bg" style="background-image: url('img/reviews-item-2.png');"></div>
+              </div>
+              <div class="reviews-item-content">
+                <div class="reviews-item-title"><h4>Esther Howard</h4></div>
+                <div class="reviews-item-date"><p>24.09.2021</p></div>
+                <div class="reviews-item-descr">
+                  <p>Мне понравился сервис. У меня сломалась крышка у стиральной машинки, быстро нашли проблему и предложили как можно ее исправить. Ремонтировали долго конечно, но она снова в строю, я счастлива! Спасибо!</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slides -->
+            <div class="swiper-slide reviews-item">
+              <div class="reviews-item-avatar">
+                <div class="reviews-item-avatar-img reviews-item-3-img-bg" style="background-image: url('img/reviews-item-3.png');"></div>
+              </div>
+              <div class="reviews-item-content">
+                <div class="reviews-item-title"><h4>Cody Fisher</h4></div>
+                <div class="reviews-item-date"><p>24.09.2021</p></div>
+                <div class="reviews-item-descr">
+                  <p>Мне понравился сервис. У меня сломалась крышка у стиральной машинки, быстро нашли проблему и предложили как можно ее исправить. Ремонтировали долго конечно, но она снова в строю, я счастлива! Спасибо!</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slides -->
+            <div class="swiper-slide reviews-item">
+              <div class="reviews-item-avatar">
+                <div class="reviews-item-avatar-img reviews-item-3-img-bg" style="background-image: url('img/reviews-item-3.png');"></div>
+              </div>
+              <div class="reviews-item-content">
+                <div class="reviews-item-title"><h4>Cody Fisher</h4></div>
+                <div class="reviews-item-date"><p>24.09.2021</p></div>
+                <div class="reviews-item-descr">
+                  <p>Мне понравился сервис. У меня сломалась крышка у стиральной машинки, быстро нашли проблему и предложили как можно ее исправить. Ремонтировали долго конечно, но она снова в строю, я счастлива! Спасибо!</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slides -->
+            <div class="swiper-slide reviews-item">
+              <div class="reviews-item-avatar">
+                <div class="reviews-item-avatar-img reviews-item-3-img-bg" style="background-image: url('img/reviews-item-3.png');"></div>
+              </div>
+              <div class="reviews-item-content">
+                <div class="reviews-item-title"><h4>Cody Fisher</h4></div>
+                <div class="reviews-item-date"><p>24.09.2021</p></div>
+                <div class="reviews-item-descr">
+                  <p>Мне понравился сервис. У меня сломалась крышка у стиральной машинки, быстро нашли проблему и предложили как можно ее исправить. Ремонтировали долго конечно, но она снова в строю, я счастлива! Спасибо!</p>
+                </div>
+              </div>
+            </div>
+            
+
+            
+
+
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination reviews-dots"></div>
+        
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="how-work">
+    <div class="container">
+      <div class="how-work-inner">
+        <div class="how-work-title">
+          <h4>Как мы просто берем и <span class="how-work-icon">
+            <img src="img/how-work-icon.svg" alt="">
+            делаем</span></h4>
+        </div>
+        <div class="how-work-img">
+          <img src="img/how-work.png" alt="">
+          <div class="how-work-img-text">
+            <div class="how-work-img-text-img">
+              <img src="img/how-work-img-text-img.svg" alt="">
+            </div>
+            <div class="how-work-img-text-descr">
+              <p>Мы ребята простые, видим поломку — берем и делаем.</p>
+            </div>
+          </div>
+        </div>
+        <div class="how-work-steps">
+          <div class="how-work-step-item">
+            <div class="how-work-step-num">1</div>
+            <div class="how-work-step-descr">
+              <p>Получаем вашу заявку 
+                по телефону или на сайте</p>
+            </div>
+          </div>
+
+          <div class="how-work-step-item">
+            <div class="how-work-step-num">2</div>
+            <div class="how-work-step-descr">
+              <p>Менеджер уточняет детали и к вам выезжает мастер</p>
+            </div>
+          </div>
+
+          <div class="how-work-step-item">
+            <div class="how-work-step-num">3</div>
+            <div class="how-work-step-descr">
+              <p>Проводим диагностику за 5 минут и называем причину поломки
+              </p>
+            </div>
+          </div>
+
+          <div class="how-work-step-item">
+            <div class="how-work-step-num">4</div>
+            <div class="how-work-step-descr">
+              <p>Ремонтируем сразу за 10-30 минут</p>
+            </div>
+          </div>
+        </div>
+        <div class="how-work-form-wrapper">
+          <form class="how-work-form" action="" method="post">
+            <input class="form-name" type="text" placeholder="Имя">
+            <input class="form-phone" type="phone" placeholder="Телефон">
+            <div class="form-btn-wrapper">
+              <img width="48" height="20" src="img/arrow-right.png" alt="">
+              <button type="submit" class="form-btn">Оставить заявку</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-title">
+          <h4>Мы работаем по <span class="contact-icon">
+            <img src="img/red-circle.svg" alt="">
+            Москве</span> и МО</h4>
+        </div>
+        <div class="contact-subtitle">
+          <p>(Радиус охвата до 30 км от МКАД) </p>
+        </div>
+        <div class="map-wrapper">
+          <div class="map">
+            <a href="https://goo.gl/maps/gXd3PsEhYfiJRWEV6" target="blank">
+              <img src="img/map.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="img/logo.png" alt="">
+        </div>
+          <div class="footer-address">
+            <img src="img/address-icon.svg" alt="">
+            <li><a href="#">
+              
+              Москва и МО <span class="footer-mini-text">(до 30 км от МКАД)</span></a></li> 
+          </div>
+          <div class="footer-phone">
+              <img src="img/phone-icon.svg" alt="">
+            <li><a href="tel:+79994442211">
+            
+              +7 999 444-22 11</a></li>
+          </div>
+      </div>
+    </div>
+  </footer>
   <!-- Библиотеки, скрипты из CDN... -->
-  
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
   <!-- Cкрипты (удалить все, кроме scripts.min.js перед билдом) -->
   
+  <script src="/js/main.js"></script>
+  <script src="/js/countdown.js"></script>
   <script src="./js/scripts.min.js"></script>
   <script>
   new TypeIt(".fade-text")
   .type("")
   .pause(2000)
   .go()
-  .speed(300);
+  .speed(300)
+  </script>
+  <script>
+
   </script>
 </body>
 </html>
