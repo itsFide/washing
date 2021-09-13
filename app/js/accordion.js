@@ -1,3 +1,4 @@
+// Аккордеон
 function accordion() {
     const items = document.querySelectorAll('.accordion__item-trigger')
     items.forEach(item => {
@@ -14,4 +15,4 @@ function accordion() {
         })
     })
 }
-accordion()
+accordion() 

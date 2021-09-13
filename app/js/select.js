@@ -1,3 +1,4 @@
+
 const getTemplate = (data = [], placeholder, selectedId) => {
     let text = placeholder ?? 'placeholder не указан'
 
@@ -31,16 +32,16 @@ class Select {
         this.options = options
         this.selectedId = options.selectedId
 
-        this.#render()
-        this.#setup()
+        this.render()
+        this.setup()
     }
 
-    #render() {
+    render() {
         const { placeholder, data } = this.options
         this.$el.classList.add('select')
         this.$el.innerHTML = getTemplate(data, placeholder, this.selectedId)
     }
-    #setup() {
+    setup() {
         this.clickHandler = this.clickHandler.bind(this)
         this.$el.addEventListener('click', this.clickHandler)
         this.$arrow = this.$el.querySelector('[data-type="arrow"]')
@@ -100,23 +101,21 @@ class Select {
 
 
 // Инициализация плагина
-// const select = new Select('#select', {
-//     placeholder: 'Выберите элемент',
-//     selectedId: '1',
-//     data: [
-//         {id: '1', value: 'React'},
-//         {id: '2', value: 'Angular'},
-//         {id: '3', value: 'Vue'},
-//         {id: '4', value: 'React Native'},
-//         {id: '5', value: 'Next'},
-//         {id: '6', value: 'Nest'}
-//     ],
-//     onSelect(item) {
-//         const input = document.querySelector('.hidden__input')
-//         input.value = item.value
-//         console.log(input.value)
-//     } 
-// })
+const select = new Select('#select', {
+    placeholder: 'Выберите элемент',
+    selectedId: '1',
+    data: [
+        {id: '1', value: 'Элемент списка 1'},
+        {id: '2', value: 'Элемент списка 2'},
+        {id: '3', value: 'Элемент списка 3'},
+        {id: '4', value: 'Элемент списка 4'},
+        {id: '5', value: 'Элемент списка 5'},
+    ],
+    onSelect(item) {
+        const input = document.querySelector('.hidden__input')
+        input.value = item.value
+    } 
+})
 
 
 
