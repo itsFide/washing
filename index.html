@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -37,7 +37,7 @@
               <div class="mobile-menu-body">
                 <li><a class="mobile-menu-link current-item" onclick="slowScroll('#top')" href="#">Главная</a></li>
               <li><a class="mobile-menu-link" onclick="slowScroll('#services')" href="#">Почему мы?</a></li>
-              <li><a class="mobile-menu-link" onclick="slowScroll('#problem')"href="#">Что случилось со стиралкой?</a></li>
+              <li><a class="mobile-menu-link" onclick="slowScroll('#problem')" href="#">Что случилось со стиралкой?</a></li>
               <li><a class="mobile-menu-link" onclick="slowScroll('#reviews')" href="#">Отзывы</a></li>
               <li><a class="mobile-menu-link" onclick="slowScroll('#how-work')" href="#">Как мы работаем</a></li>
               <li><a class="mobile-menu-link" onclick="slowScroll('#contact')" href="#">Где мы работаем</a></li>
@@ -664,7 +664,7 @@
   </footer>
   
   <!-- Библиотеки, скрипты из CDN... -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script>
     function slowScroll(id){
       $('html').animate({
@@ -674,7 +674,7 @@
     }
     
   </script>
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script defer src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
   <!-- Cкрипты (удалить все, кроме scripts.min.js перед билдом) -->
   
@@ -682,13 +682,9 @@
   <script src="js/typeit.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/countdown.js"></script> -->
-  <script src="./js/scripts.min.js"></script>
-  <script>
+  <script defer src="./js/scripts.min.js"></script>
+  <script defer>
   new TypeIt(".fade-text")
-  .type("")
-  .pause(2000)
-  .go()
-  .speed(300)
   </script>
   
 </body>
